@@ -1,20 +1,20 @@
-app.config(function($mdIconProvider) {
+app.config(["$mdIconProvider", function ($mdIconProvider) {
     $mdIconProvider
         .defaultIconSet('./icons/mdi.svg')
-});
+}]);
 
 // Disable aria warnings
-app.config(function($mdAriaProvider) {
+app.config(["$mdAriaProvider", function ($mdAriaProvider) {
     $mdAriaProvider.disableWarnings();
-});
+}]);
 
 //Fix for not working inputs on mobile devices
-app.config(function ($mdGestureProvider) {
+app.config(["$mdGestureProvider", function ($mdGestureProvider) {
     $mdGestureProvider.skipClickHijack();
-});
+}]);
 
-app.config(function($mdThemingProvider) {
-        $mdThemingProvider.theme('default')
-            .primaryPalette('indigo')
-            .accentPalette('orange');
-    });
+app.config(["$mdThemingProvider", function ($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+        .primaryPalette('indigo')
+        .accentPalette('orange');
+}]);
