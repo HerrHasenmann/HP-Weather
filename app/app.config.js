@@ -16,6 +16,12 @@ app.config(["$mdGestureProvider", function ($mdGestureProvider) {
 // Set theme for app
 app.config(["$mdThemingProvider", function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-        .primaryPalette('indigo')
-        .accentPalette('deep-orange');
+        .primaryPalette('indigo', {
+            "default": "700"
+        })
+        .accentPalette('blue-grey', {
+            "default": "500"
+        })
+        .warnPalette('deep-orange')
+        .backgroundPalette('grey');
 }]);
