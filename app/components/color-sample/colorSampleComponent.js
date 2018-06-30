@@ -5,7 +5,9 @@ app.component("colorSample", {
 
 function ColorSampleController($mdTheming){
 
-    console.log($mdTheming.THEMES)
+    var ctrl = this;
 
-    //TODO display default theme colors
+    console.log($mdTheming.THEMES);
+
+    ctrl.themes = $mdTheming.THEMES
 }
