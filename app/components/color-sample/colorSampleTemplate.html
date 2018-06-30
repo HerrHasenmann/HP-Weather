@@ -1,69 +1,26 @@
 <!DOCTYPE html>
-<div layout="column">
+<div layout="column" layout-padding>
 
-    <theme theme="theme" ng-repeat="theme in $ctrl.themes"></theme>
+    <div layout="row" layout-align="space-between center">
 
-    <div layout="column" md-colors="{background: 'primary'}" layout-margin md-whiteframe="1">
-        <span class="md-title">Primary</span>
+        <span class="md-headline">Installed Themes</span>
 
-        <div layout="row">
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'primary-hue-1'}">
-                <span>Hue-1</span>
-            </div>
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'primary-hue-2'}">
-                <span>Hue-2</span>
-            </div>
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'primary-hue-3'}">
-                <span>Hue-3</span>
-            </div>
-        </div>
+        <md-switch ng-model="$ctrl.showHue" md-invert style="margin-top: 0; margin-bottom: 0">Show Hue</md-switch>
+
     </div>
 
-    <div layout="column" md-colors="{background: 'accent'}" layout-margin md-whiteframe="1">
-        <span class="md-title">Accent</span>
+    <div layout="row" layout-align="center stretch" layout-xs="column" layout-padding>
 
-        <div layout="row">
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'accent-hue-1'}">
-                <span>Hue-1</span>
-            </div>
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'accent-hue-2'}">
-                <span>Hue-2</span>
-            </div>
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'accent-hue-3'}">
-                <span>Hue-3</span>
-            </div>
-        </div>
-    </div>
+        <theme
+                flex-xs="100"
+                flex-sm="50"
+                flex-md="50"
+                flex-lg="33"
+                flex-xl="25"
+                layout="column"
+                ng-repeat="theme in $ctrl.themes"
+                theme="theme"
+                show-hue="$ctrl.showHue"></theme>
 
-    <div layout="column" md-colors="{background: 'warn'}" layout-margin md-whiteframe="1">
-        <span class="md-title">Warn</span>
-
-        <div layout="row">
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'warn-hue-1'}">
-                <span>Hue-1</span>
-            </div>
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'warn-hue-2'}">
-                <span>Hue-2</span>
-            </div>
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'warn-hue-3'}">
-                <span>Hue-3</span>
-            </div>
-        </div>
-    </div>
-
-    <div layout="column" md-colors="{background: 'background'}" layout-margin md-whiteframe="1">
-        <span class="md-title">Background</span>
-
-        <div layout="row">
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'background-hue-1'}">
-                <span>Hue-1</span>
-            </div>
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'background-hue-2'}">
-                <span>Hue-2</span>
-            </div>
-            <div flex="33" layout="row" layout-align="center center" md-colors="{background: 'background-hue-3'}">
-                <span>Hue-3</span>
-            </div>
-        </div>
     </div>
 </div>
