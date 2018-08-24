@@ -22,7 +22,7 @@
     <toolbar></toolbar>
 
     <md-content flex>
-        <color-sample></color-sample>
+        <dashboard></dashboard>
     </md-content>
 
 </div>
@@ -31,6 +31,7 @@
 <script src="./node_modules/angular/angular.min.js"></script>
 <script src="./node_modules/angular-aria/angular-aria.min.js"></script>
 <script src="./node_modules/angular-animate/angular-animate.min.js"></script>
+<script src="./node_modules/angular-resource/angular-resource.min.js"></script>
 
 <!-- Material Angular -->
 <script src="./node_modules/angular-material/angular-material.min.js"></script>
@@ -50,6 +51,11 @@
 
 <!-- Services -->
 <script src="./shared/title/TitleService.min.js"></script>
+<script src="./shared/weather/WeatherService.min.js"></script>
+<script src="./shared/local-storage/localStorageService.min.js"></script>
+
+<!-- Constants -->
+<script src="./shared/weather/openWeatherMapApiKey.min.js"></script>
 
 <!-- Filter -->
 <script src="./node_modules/angular-toarrayfilter/toArrayFilter.js"></script>
@@ -57,6 +63,8 @@
 <!-- Components -->
 <script src="./components/toolbar/toolbarComponent.min.js"></script>
 <script src="./components/sidenav/sidenavComponent.min.js"></script>
+<script src="./components/dashboard/dashboardComponent.min.js"></script>
+<script src="./components/day/dayComponent.min.js"></script>
 
 <script src="./components/color-sample/colorSampleComponent.min.js"></script>
 <script src="./components/color-sample/theme/themeComponent.min.js"></script>

@@ -16,13 +16,13 @@ app.config(["$mdGestureProvider", function ($mdGestureProvider) {
 // Set theme for app
 app.config(["$mdThemingProvider", function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-        .primaryPalette('indigo', {
-            "default": "700"
+        .primaryPalette('orange', {
+            "default": "800"
         })
-        .accentPalette('blue-grey', {
-            "default": "500"
+        .accentPalette('grey', {
+            "default": "600"
         })
-        .warnPalette('deep-orange')
+        .warnPalette('red')
         .backgroundPalette('grey');
 
     $mdThemingProvider.theme('default-dark')
@@ -36,5 +36,5 @@ app.config(["$mdThemingProvider", function ($mdThemingProvider) {
         .backgroundPalette('grey')
         .dark();
 
-    $mdThemingProvider.setDefaultTheme('default-dark');
+    // $mdThemingProvider.setDefaultTheme('default-dark');
 }]);

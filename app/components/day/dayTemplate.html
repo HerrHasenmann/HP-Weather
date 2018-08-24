@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<div layout="column" layout-align="center center" md-whiteframe="4" layout-margin>
+    <span>{{$ctrl.dayOfWeek}}</span>
+    <div layout="row" layout-align="center center">
+        <md-icon md-svg-icon="weather-sunny"></md-icon>
+        <span>{{$ctrl.weather.main.temp | number : 0}}°</span>
+    </div>
+</div>
